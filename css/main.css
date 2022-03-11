@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@400;600;700;800&family=Rubik:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+@font-face {
+  font-family: "GraphikRegular";
+  src: url(../fonts/GraphikRegular.otf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GraphikBold";
+  src: url("../fonts/GraphikBold.otf") format(truetype);
+  font-style: bold;
+  font-weight: 700;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  background-color: #19191B;
+}
+body p {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  width: 132px;
+  height: 40px;
+}
+.header__contact {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 8px 20px 8px 20px;
+  margin-right: 15px;
+  color: #fff;
+  padding: auto;
+}
+.header__contact:hover {
+  border: 1px solid #5454D4;
+  color: #5454D4;
+}
+.header__sort {
+  display: none;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  align-items: center;
+}
+
+.header-nav {
+  max-width: 420px;
+}
+.header-nav__list {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  display: flex;
+}
+.header-nav__list :not(:first-child) {
+  padding-left: 40px;
+}
+.header-nav__item a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.header-nav__item a:hover {
+  color: #5454D4;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    justify-content: space-around;
+  }
+
+  .header-nav__list :not(:first-child) {
+    padding-left: 20px;
+  }
+
+  .header__contact {
+    margin-right: 0;
+  }
+}
+@media (max-width: 640px) {
+  .header__contact {
+    display: none;
+  }
+  .header__sort {
+    display: block;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+}
+.button {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 25px;
+  background-color: #5454D4;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.main {
+  color: #fff;
+}
+
+.pop-block__main-text {
+  font-family: "GraphikBold", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+}
+.pop-block__words {
+  max-width: 582px;
+  margin-top: 150px;
+}
+.pop-block__image {
+  padding-left: 200px;
+}
+.pop-block--main {
+  display: flex;
+}
+.pop-block__text {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 21px;
+  line-height: 39px;
+}
+.pop-block__text--main {
+  padding: 25px 0 50px 0;
+  display: block;
+  max-width: 532px;
+}
+
+@media (max-width: 1300px) {
+  .pop-block__image {
+    padding-left: 100px;
+  }
+}
+@media (max-width: 1150px) {
+  .pop-block__image {
+    padding-left: 0;
+  }
+}
+@media (max-width: 1035px) {
+  .pop-block--main {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 760px) {
+  .pop-block__main-text {
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .pop-block__text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .pop-block--main {
+    margin-top: 115px;
+    max-width: 370px;
+  }
+
+  .wrapper {
+    padding: 24px;
+  }
+}
+@media (max-width: 380px) {
+  .pop-block__main-text {
+    font-size: 44px;
+    line-height: 64px;
+  }
+  .pop-block__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .pop-block--main {
+    margin-top: 75px;
+    min-width: 250px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
