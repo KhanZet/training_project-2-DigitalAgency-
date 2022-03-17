@@ -98,6 +98,11 @@ body p {
   margin: 0 auto;
 }
 
+@media (max-width: 1400px) {
+  .container {
+    padding-left: 5%;
+  }
+}
 .header__logo {
   width: 132px;
   height: 40px;
@@ -173,6 +178,10 @@ body p {
 
   .header-nav {
     display: none;
+  }
+
+  .container {
+    padding-left: 0;
   }
 }
 .button {

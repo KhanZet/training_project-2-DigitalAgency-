@@ -17,6 +17,12 @@ body {
 	margin: 0 auto;
 
 }
+@media (max-width: 1400px) {
+	.container {
+		padding-left: 5%;
+	}
+	
+}
 
 
 .header {
@@ -96,14 +102,17 @@ body {
 		&__sort {
 			display: block;
 		}
-}
+	}
 	.header-container {
 		justify-content: space-between;
 		padding: 25px;
 	}
 	.header-nav {
 		display: none;
-}
+	}
+	.container {
+		padding-left: 0;
+	}
 
 	
 }
@@ -186,7 +195,7 @@ body {
 			margin-top: 100px;
 		}
 	}
-	
+
 }
 @media (max-width: 760px) {
 	.pop-block {
