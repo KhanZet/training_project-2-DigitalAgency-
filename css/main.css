@@ -277,5 +277,28 @@ body p {
     min-width: 250px;
   }
 }
+.video-block__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.video-block__p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.video-block__p_block {
+  max-width: 450px;
+  height: auto;
+}
+.video-block__h2 {
+  font-family: "GraphikBold", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.video-block_main {
+  margin-top: 40px;
+}
 
 /*# sourceMappingURL=main.css.map */

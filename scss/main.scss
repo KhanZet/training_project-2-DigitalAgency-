@@ -237,3 +237,31 @@ body {
 	}
 
 }
+
+// VIDEO BLOCK
+.video-block {
+	&__container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+	}
+	&__p {
+		font-family: $nunito_font;
+		font-weight: 400;
+		font-size: 14px;
+	}
+	&__p_block {
+		max-width: 450px;
+		height: auto;
+	}
+	&__h2 {
+		font-family: $graphikbold_font;
+		font-weight: 700;
+		font-size: 40px;
+
+	}
+}
+.video-block_main {
+	margin-top: 40px;
+}
