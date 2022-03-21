@@ -94,15 +94,10 @@ body p {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-@media (max-width: 1400px) {
-  .container {
-    padding-left: 5%;
-  }
-}
 .header__logo {
   width: 132px;
   height: 40px;
@@ -208,7 +203,7 @@ body p {
   margin-top: 150px;
 }
 .pop-block__image {
-  padding-left: 15%;
+  padding-left: 5%;
 }
 .pop-block__image img {
   max-width: 100%;
@@ -310,7 +305,7 @@ body p {
 }
 
 .video-block_main {
-  margin-top: 40px;
+  margin-top: 150px;
 }
 
 /*# sourceMappingURL=main.css.map */

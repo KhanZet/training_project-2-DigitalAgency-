@@ -13,16 +13,16 @@ body {
 }
 
 .container {
-	max-width: 1400px;
+	max-width: 1200px;
 	margin: 0 auto;
 
 }
-@media (max-width: 1400px) {
-	.container {
-		padding-left: 5%;
-	}
+// @media (max-width: 1400px) {
+// 	.container {
+// 		padding-left: 5%;
+// 	}
 	
-}
+// }
 
 
 .header {
@@ -145,7 +145,7 @@ body {
 		margin-top: 150px;
 	}
 	&__image {
-		padding-left: 15%;
+		padding-left: 5%;
 		
 		img {
 			max-width: 100%;
@@ -280,7 +280,7 @@ body {
 	}
 }
 .video-block_main {
-	margin-top: 40px;
+	margin-top: 150px;
 }
 
 @media (max-width: 768) {
