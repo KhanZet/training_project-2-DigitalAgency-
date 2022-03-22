@@ -295,6 +295,7 @@ body p {
 }
 .video-block__p_block {
   max-width: 450px;
+  color: rgba(255, 255, 255, 0.7);
   height: auto;
   padding-bottom: 25px;
 }
