@@ -1,6 +1,6 @@
 // document.documentElement.clientWidth;
 // document.documentElement.clientHeight;
-let item = document.querySelector('iframe');
+const item = document.querySelector('iframe');
 
 function resizeVideoBlock () {
 	if(document.documentElement.clientWidth<1200){

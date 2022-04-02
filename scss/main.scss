@@ -83,6 +83,7 @@ body {
 	}
 	.header__contact {
 		margin-right: 0;
+		
 	}
 }
 
@@ -102,6 +103,7 @@ body {
 	}
 	.header-nav {
 		display: none;
+		pointer-events: none;
 	}
 	.container {
 		padding-left: 0;
