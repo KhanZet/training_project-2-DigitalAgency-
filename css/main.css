@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@400;600;700;800&family=Rubik:wght@400;500&display=swap");
 * {
   padding: 0;
@@ -161,7 +162,7 @@ body p {
   }
 
   .wrapper {
-    padding-left: 25px;
+    padding: 0px 25px;
   }
 }
 @media (max-width: 725px) {
@@ -436,9 +437,96 @@ body p {
   margin-top: 150px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .service__main-block {
     justify-content: center;
+  }
+}
+.portfolio {
+  padding: 75px 0px;
+}
+.portfolio__h2 {
+  font-family: "GraphikBold", sans-serif;
+  font-weight: 700;
+  font-size: 58px;
+  padding-bottom: 24px;
+}
+.portfolio__images {
+  display: flex;
+}
+.portfolio__item img {
+  background-color: #1E1E20;
+  padding: 24px;
+  border-radius: 8px;
+}
+.portfolio__buttons {
+  display: flex;
+  align-content: center;
+}
+.portfolio__button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.portfolio__button:hover {
+  background-color: #5454D4;
+}
+.portfolio__button::before {
+  content: "‹";
+  font-size: 42px;
+  font-family: Courier New;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+.portfolio__button:last-child {
+  transform: rotate(185deg);
+  margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .portfolio__images {
+    flex-wrap: wrap;
+  }
+  .portfolio__item:not(:first-child) {
+    margin-left: 24px;
+  }
+  .portfolio__item_1 {
+    margin-top: 70px;
+  }
+  .portfolio__item_2 {
+    margin-top: 128px;
+  }
+  .portfolio__item_3 {
+    margin-top: 186px;
+  }
+}
+@media (max-width: 1270px) {
+  .portfolio__item_1, .portfolio__item_2, .portfolio__item_3 {
+    margin-top: 0;
+    margin-top: 24px;
+  }
+  .portfolio__images {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio__image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio__images {
+    flex-direction: row;
+    align-items: start;
+    display: none;
   }
 }
 

@@ -33,3 +33,20 @@ if(iconNav){
 
 	})
 }
+// PORTFOLIO
+
+const buttonLeft = document.querySelector('.portfolio__button_left');
+const buttonRight = document.querySelector('.portfolio__button_right')
+
+const imagesDiv = document.querySelector('.portfolio__images');
+const imagesList = imagesDiv.children
+
+console.log(imagesList[0]);
+
+buttonRight.addEventListener('click', function(e){
+	let imagesListLength = imagesList.length;
+	let i = 0;
+	imagesList[i].classList.add('_active');
+	i++;
+	console.log(imagesListLength);
+});
