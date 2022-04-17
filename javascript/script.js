@@ -38,15 +38,23 @@ if(iconNav){
 const buttonLeft = document.querySelector('.portfolio__button_left');
 const buttonRight = document.querySelector('.portfolio__button_right')
 
-const imagesDiv = document.querySelector('.portfolio__images');
-const imagesList = imagesDiv.children
+const imageDiv = document.querySelector('.portfolio__items');
+const image = imageDiv.firstChild
+const portfolioList = ['portfolio1.png', 'portfolio2.png', 'portfolio3.png']
 
-console.log(imagesList[0]);
-
+console.log(image);
+	
+let i = 1;
+image.src = 'img/main/' + portfolioList[1];
 buttonRight.addEventListener('click', function(e){
-	let imagesListLength = imagesList.length;
-	let i = 0;
-	imagesList[i].classList.add('_active');
 	i++;
-	console.log(imagesListLength);
+	if(i == 3) i = 2;
+	image.src = 'img/main/' + portfolioList[i];
+
+});
+buttonLeft.addEventListener('click', function(e){
+	i--;
+	if(i == -1) i = 0;
+	image.src = 'img/main/' + portfolioList[i];
+
 });
